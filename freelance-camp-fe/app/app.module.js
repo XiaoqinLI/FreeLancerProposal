@@ -8,12 +8,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var forms_1 = require("@angular/forms");
 var app_routing_module_1 = require("./app-routing.module");
 var app_component_1 = require("./app.component");
 var homepage_component_1 = require("./homepage/homepage.component");
 var documents_component_1 = require("./documents/documents.component");
 var proposal_list_component_1 = require("./proposal/proposal-list.component");
 var proposal_new_component_1 = require("./proposal/proposal-new.component");
+var proposal_show_component_1 = require("./proposal/proposal-show.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -23,14 +25,16 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [
             platform_browser_1.BrowserModule,
-            app_routing_module_1.AppRoutingModule
+            app_routing_module_1.AppRoutingModule,
+            forms_1.FormsModule
         ],
         declarations: [
             app_component_1.AppComponent,
             homepage_component_1.HomepageComponent,
             documents_component_1.DocumentsComponent,
             proposal_list_component_1.ProposalListComponent,
-            proposal_new_component_1.ProposalNewComponent
+            proposal_new_component_1.ProposalNewComponent,
+            proposal_show_component_1.ProposalShowComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     })
